@@ -1,0 +1,36 @@
+# Environments
+.env
+.venv/
+venv/
+env/
+
+# Python caches and compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+
+# Databases and Data
+*.db
+*.sqlite3
+/data/
+/chroma/
+
+# Logs and temp files
+*.log
+*.txt
+!requirements.txt
+!build_log.txt
+
+# OS Generated
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+
+# Docker 
+.dockerignore
