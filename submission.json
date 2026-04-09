@@ -1,0 +1,25 @@
+{
+  "project_name": "AI Academic Advisor — MCP Server",
+  "student_name": "Your Name",
+  "student_email": "your.email@university.edu",
+  "submission_date": "2026-04-05",
+  "repository_url": "",
+  "tech_stack": {
+    "language": "Python 3.11",
+    "framework": "FastAPI",
+    "orm": "SQLAlchemy 2.0",
+    "vector_db": "ChromaDB",
+    "embedding_model": "all-MiniLM-L6-v2",
+    "validation": "Pydantic v2",
+    "containerization": "Docker + Docker Compose"
+  },
+  "endpoints": [
+    {"method": "GET", "path": "/health", "description": "Health check"},
+    {"method": "GET", "path": "/tools", "description": "List available MCP tools"},
+    {"method": "POST", "path": "/memory/write", "description": "Dual-write to SQLite + ChromaDB"},
+    {"method": "POST", "path": "/memory/read", "description": "Read conversation history"},
+    {"method": "POST", "path": "/memory/retrieve", "description": "Semantic search over conversations"}
+  ],
+  "architecture": "MCP (Memory, Control, Process)",
+  "notes": "Embedding model is pre-downloaded during Docker image build for faster cold starts."
+}
